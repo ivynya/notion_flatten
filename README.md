@@ -7,8 +7,6 @@ Flattens Notion API responses to be easier to work with in code. This is accompl
 
 ## Usage Example
 
----
-
 ### Flattening a Database Query
 ```ts
 import { flattenResult } from "https://deno.land/x/notion-flatten@v0.1.0/mod.ts";
@@ -22,33 +20,33 @@ const flatData = flattenResult(data);
 Pre-transformation data:
 ```json
 {
-	"object": "list",
-	"results": [
-		{
-			"object": "page",
-			"id": "2e01e904-febd-43a0-ad02-8eedb903a82c",
-			"created_time": "2020-03-17T19:10:04.968Z",
-			"last_edited_time": "2020-03-17T21:49:37.913Z",
-			"parent": {
-				"type": "database_id",
-				"database_id": "897e5a76-ae52-4b48-9fdf-e71f5945d1af"
-			},
-			"archived": false,
-			"url": "https://www.notion.so/2e01e904febd43a0ad028eedb903a82c",
-			"properties": {
-				"Cost of next trip": {
-					"id": "R}wl",
-					"type": "formula",
-					"formula": {
-						"type": "number",
-						"number": 2
-					}
-				}
-			}
-		}
-	],
-	"has_more": false,
-	"next_cursor": null
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "2e01e904-febd-43a0-ad02-8eedb903a82c",
+      "created_time": "2020-03-17T19:10:04.968Z",
+      "last_edited_time": "2020-03-17T21:49:37.913Z",
+      "parent": {
+        "type": "database_id",
+        "database_id": "897e5a76-ae52-4b48-9fdf-e71f5945d1af"
+      },
+      "archived": false,
+      "url": "https://www.notion.so/2e01e904febd43a0ad028eedb903a82c",
+      "properties": {
+        "Cost of next trip": {
+          "id": "R}wl",
+          "type": "formula",
+          "formula": {
+            "type": "number",
+            "number": 2
+          }
+        }
+      }
+    }
+  ],
+  "has_more": false,
+  "next_cursor": null
 }
 ```
 
