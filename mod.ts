@@ -1,6 +1,7 @@
 
 export {
-	flattenDb,
-	flattenResult,
-	flatten
-} from "./flatten.ts";
+	flattenDatabase,
+	flattenPage,
+	flattenProperty,
+	flattenQuery
+} from "./flatten/mod.ts";
