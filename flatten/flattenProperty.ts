@@ -8,6 +8,13 @@ export function flattenProperty(property: any): any {
 	switch (property?.type) {
 		case undefined:
 			return property;
+		case "external":
+		case "file":
+			return {
+				type: "file",
+				name: property.name,
+				...property[property.type]
+			};
 		default:
 			return flattenProperty(property[property.type]);
 	}
