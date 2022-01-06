@@ -9,6 +9,7 @@ import { flattenProperty } from "./mod.ts";
 export function flattenDatabase(db: Flattenable): Flattened {
   // Transpose properties to new object
   const flat: Flattened = {
+    title: flattenProperty((db as any).title),
     properties: db.properties,
     id: db.id,
     created_time: db.created_time,
