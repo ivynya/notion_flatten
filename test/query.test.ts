@@ -34,12 +34,12 @@ export const queryFlat = [
     "ST-URL": "https://wisdomduck.sdbagel.com/",
     "ST-Media": [
       {
-        type: "file",
+        type: "external",
         name: "Named Embed Link",
         url: "https://www.youtube.com/watch?v=Rk1MYMPDx3s"
       },
       {
-        type: "file",
+        type: "external",
         name: "https://wisdomduck.sdbagel.com/",
         url: "https://wisdomduck.sdbagel.com/"
       }
