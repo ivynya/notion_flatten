@@ -15,7 +15,7 @@ Examples of non-flattened and flattened data are available in the [test folder](
 
 ### Flattening a Database Query
 ```ts
-import { flattenQuery } from "https://deno.land/x/notion-flatten@v0.2.0/mod.ts";
+import { flattenQuery } from "https://deno.land/x/notion-flatten@v0.3.2/mod.ts";
 
 const res = await fetch(`https://api.notion.com/v1/databases/:id/query`, ...);
 const data = await res.json();
@@ -25,7 +25,7 @@ const flatData = flattenQuery(data);
 
 ### Flattening Database Meta Info
 ```ts
-import { flattenDatabase } from "https://deno.land/x/notion-flatten@v0.2.0/mod.ts";
+import { flattenDatabase } from "https://deno.land/x/notion-flatten@v0.3.2/mod.ts";
 
 const res = await fetch(`https://api.notion.com/v1/databases/:id`, ...);
 const data = await res.json();
@@ -35,7 +35,7 @@ const flatMetadata = flattenDatabase(data);
 
 ### Flattening a Page
 ```ts
-import { flattenPage } from "https://deno.land/x/notion-flatten@v0.2.0/mod.ts";
+import { flattenPage } from "https://deno.land/x/notion-flatten@v0.3.2/mod.ts";
 
 const res = await fetch(`https://api.notion.com/v1/pages/:id`, ...);
 const data = await res.json();
@@ -45,7 +45,7 @@ const flatPage = flattenPage(data);
 
 ### Flattening a Property
 ```ts
-import { flattenProperty } from "https://deno.land/x/notion-flatten@v0.2.0/mod.ts";
+import { flattenProperty } from "https://deno.land/x/notion-flatten@v0.3.2/mod.ts";
 
 const res = await fetch(`https://api.notion.com/v1/pages/:id`, ...);
 const data = await res.json();
