@@ -11,7 +11,7 @@ export function flattenProperty(property: any): any {
 		case "external":
 		case "file":
 			return {
-				type: "file",
+				type: property.type,
 				name: property.name,
 				...property[property.type]
 			};
